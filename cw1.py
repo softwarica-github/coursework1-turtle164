@@ -6,15 +6,15 @@ import threading
 class PortScannerGUI:
     def __init__(self, master):
         self.master = master
-        self.master.title("Port Scanner GUI")
+        self.master.title("Port Scanner")
 
-        self.target_label = tk.Label(master, text="Enter IP Address:")
+        self.target_label = tk.Label(master, text="Enter IP Address or HostName:")
         self.target_label.grid(row=0, column=0, padx=10, pady=5, sticky=tk.W)
 
         self.target_entry = tk.Entry(master)
         self.target_entry.grid(row=0, column=1, padx=10, pady=5, sticky=tk.W)
 
-        self.port_label = tk.Label(master, text="Enter Port Numbers (comma-separated):")
+        self.port_label = tk.Label(master, text="Enter Port Numbers:")
         self.port_label.grid(row=1, column=0, padx=10, pady=5, sticky=tk.W)
 
         self.port_entry = tk.Entry(master)
